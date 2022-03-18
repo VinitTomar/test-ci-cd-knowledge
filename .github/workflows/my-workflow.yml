@@ -20,6 +20,6 @@ jobs:
           commit=$(git log -1 | grep "^commit" | awk '{print $2}')
           echo "::set-output name=nowCommit::${commit}"
       - name: Check both commit
-        if: ${{ steps.getSinceCommit.outputs.sinceCommit != steps.getNowCommit.outputs.nowCommit }}
+        if: ${{ steps.getSinceCommit.outputs.sinceCommit == steps.getNowCommit.outputs.nowCommit }}
         run: exit 1
 
