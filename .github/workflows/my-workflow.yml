@@ -23,6 +23,9 @@ jobs:
             echo "::set-output name=nowCommit::${commit}"
       - name: Print current branch commit
         run: echo "${{ steps.getNowCommit.outputs.nowCommit }}"
-
-
+      - name: Check both commit
+        if: ${{ steps.getSinceCommit.outputs.sinceCommit }} == ${{ steps.getNowCommit.outputs.nowCommit }}
+        run: |
+            echo failing step
+            exit 1
 
