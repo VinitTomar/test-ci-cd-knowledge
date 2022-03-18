@@ -12,7 +12,7 @@ jobs:
       - name: Get main branch commit
         id: getSinceCommit
         run: |
-            sc=git merge-base HEAD origin/${{ github.event.repository.default_branch }}
+            sc = (git merge-base HEAD origin/${{ github.event.repository.default_branch }})
             echo "::set-output name=sinceCommit::sc"
       - name: Print main branch commit
         run: echo "${{ steps.getSinceCommit.outputs.sinceCommit }}"
