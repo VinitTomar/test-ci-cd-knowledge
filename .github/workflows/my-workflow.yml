@@ -6,10 +6,10 @@ jobs:
   check-diff:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - name: Get main branch diff
+      # - uses: actions/checkout@v2
+      #   with:
+      #     fetch-depth: 0
+      - name: Get main branch
         run: echo ${{ github.event.repository.default_branch }}
       - name: Current branch
         run: echo ${GITHUB_REF##*/}
