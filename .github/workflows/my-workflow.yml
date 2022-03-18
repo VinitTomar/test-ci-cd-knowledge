@@ -15,7 +15,7 @@ jobs:
             echo "::set-output name=sinceCommit::$(git merge-base HEAD origin/${{ github.event.repository.default_branch }})"
       - name: Print main branch commit
         run: echo "${{ steps.getSinceCommit.outputs.sinceCommit }}"
-      - name: Current branch
-        run: echo ${GITHUB_REF##*/}
+      - name: Get current branch commit
+        run: echo $(git log -1 | grep "^commit" | awk '{print $2}')
 
 
