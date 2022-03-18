@@ -1,4 +1,4 @@
-const url = 'https://json-server--3000.local.webcontainer.io/comments';
+const url = 'https://json-server-7n31wy--3000.local.webcontainer.io/profile';
 
 fetch(url)
   .then((r) => r.json())
