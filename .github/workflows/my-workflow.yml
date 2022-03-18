@@ -19,7 +19,7 @@ jobs:
       - name: Get current branch commit
         id: getNowCommit
         run: |
-            commit=echo $(git log -1 | grep "^commit" | awk '{print $2}')
+            commit=$(git log -1 | grep "^commit" | awk '{print $2}')
             echo "::set-output name=nowCommit::${commit}"
       - name: Print current branch commit
         run: echo "${{ steps.getNowCommit.outputs.nowCommit }}"
