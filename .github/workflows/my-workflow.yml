@@ -14,7 +14,7 @@ jobs:
         run: |
             echo "::set-output name=sinceCommit::(git merge-base HEAD origin/${{ github.event.repository.default_branch }})"
       - name: Print main branch commit
-        run: echo ${{ steps.getSinceCommit.outputs.sinceCommit }}
+        run: echo "${{ steps.getSinceCommit.outputs.sinceCommit }}"
       - name: Current branch
         run: echo ${GITHUB_REF##*/}
 
