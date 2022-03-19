@@ -2,8 +2,6 @@ name: My workflow
 
 on: push
 
-# uses: ./.github/workflows/diff-checker.yml
-
 jobs:
   Diff:
     runs-on: ubuntu-latest

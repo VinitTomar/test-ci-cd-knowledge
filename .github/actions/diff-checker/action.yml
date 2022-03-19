@@ -15,6 +15,6 @@ runs:
         echo "::set-output name=nowCommit::${commit}"
       shell: bash
     - name: Check both commit
-      if: ${{ steps.getSinceCommit.outputs.sinceCommit != steps.getNowCommit.outputs.nowCommit }}
+      if: ${{ steps.getSinceCommit.outputs.sinceCommit == steps.getNowCommit.outputs.nowCommit }}
       run: exit 1
       shell: bash
