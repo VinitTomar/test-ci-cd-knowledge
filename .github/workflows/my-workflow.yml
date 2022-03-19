@@ -3,6 +3,12 @@ name: My workflow
 on: push
 
 jobs:
-  diff:
-    uses: ./.github/workflows/diff-checker.yml
+  Diff:
+    # uses: ./.github/workflows/diff-checker.yml
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+      - uses: ./.github/actions/diff-checker
 
