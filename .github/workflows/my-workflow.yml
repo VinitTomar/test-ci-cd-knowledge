@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: echo '${{ toJSON(github.event) }}'
+      # - run: echo '${{ toJSON(github.event) }}'
       - name: Get main branch commit
         id: getSinceCommit
         run: |
