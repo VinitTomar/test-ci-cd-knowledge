@@ -2,9 +2,10 @@ name: My workflow
 
 on: push
 
+# uses: ./.github/workflows/diff-checker.yml
+
 jobs:
   Diff:
-    # uses: ./.github/workflows/diff-checker.yml
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
