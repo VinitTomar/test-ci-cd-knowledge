@@ -1,22 +1,10 @@
-name: My workflow
+name: Validate code
 
 on: 
-  push:
-    branches:
-      - '**'
-      - '!main'
+  workflow_call
 
 jobs:
-  Diff:
-    # if: github.event.repository.default_branch != github.ref_name
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - uses: ./.github/actions/diff-checker
   Linting:
-    needs: Diff
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -29,7 +17,6 @@ jobs:
       - name: Checking code guidelines
         run: npm run lint
   Testing:
-    needs: Diff
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

@@ -1,0 +1,19 @@
+name: Other branches
+
+on: 
+  push:
+    branches:
+      - '**'
+      - '!main'
+
+jobs:
+  Diff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: ./.github/actions/diff-checker
+  Validate:
+    needs: Diff
+    uses: ./.github/workflows/validate.yml

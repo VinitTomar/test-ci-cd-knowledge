@@ -1,0 +1,10 @@
+name: For main branch
+
+on: 
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  Validate:
+    uses: ./.github/workflows/validate.yml
