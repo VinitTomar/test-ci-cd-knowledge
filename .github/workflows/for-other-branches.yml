@@ -10,6 +10,7 @@ jobs:
   Diff:
     runs-on: ubuntu-latest
     steps:
+      - run: echo heroku --version 
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
