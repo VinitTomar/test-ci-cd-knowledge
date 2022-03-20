@@ -1,10 +1,11 @@
-name: My workflow
+name: Otner branches
+description: Check code for branches who are not main(default branch)
 
 on: 
   push:
     branches:
       - '**'
-      - '!main'
+      - '!${{ github.event.repository.default_branch }}'
 
 jobs:
   Diff:
