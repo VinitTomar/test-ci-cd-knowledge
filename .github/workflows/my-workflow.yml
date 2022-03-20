@@ -1,10 +1,12 @@
 name: My workflow
 
 on: push
+  branches:
+    - '!main'
 
 jobs:
   Diff:
-    if: github.event.repository.default_branch != github.ref_name
+    # if: github.event.repository.default_branch != github.ref_name
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
