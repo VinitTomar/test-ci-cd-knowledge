@@ -11,4 +11,13 @@ jobs:
         with:
           fetch-depth: 0
       - uses: ./.github/actions/diff-checker
-
+  Install:
+    needs: Diff
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: npm install
+      - name: Node version
+        run: node --version
