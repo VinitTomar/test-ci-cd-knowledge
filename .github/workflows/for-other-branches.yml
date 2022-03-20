@@ -1,5 +1,4 @@
 name: Otner branches
-description: Check code for branches who are not main(default branch)
 
 on: 
   push:
