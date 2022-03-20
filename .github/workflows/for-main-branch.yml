@@ -1,0 +1,13 @@
+name: For main branch
+
+on: 
+  push:
+    branches:
+      - 'main'
+  pull_request:
+    branches:
+      - 'main'
+
+jobs:
+  Validate:
+    uses: ./.github/workflows/validate.yml
