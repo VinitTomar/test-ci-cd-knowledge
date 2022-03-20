@@ -15,4 +15,5 @@ jobs:
           fetch-depth: 0
       - uses: ./.github/actions/diff-checker
   Validate:
+    needs: Diff
     uses: ./.github/workflows/validate.yml

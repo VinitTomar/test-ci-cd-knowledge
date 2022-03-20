@@ -5,7 +5,6 @@ on:
 
 jobs:
   Linting:
-    needs: Diff
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -18,7 +17,6 @@ jobs:
       - name: Checking code guidelines
         run: npm run lint
   Testing:
-    needs: Diff
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
