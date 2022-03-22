@@ -22,6 +22,7 @@ jobs:
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
       run: |
+        npm install
         npm run build
         heroku container:push -a ${{ secrets.HEROKU_APP_NAME }} web 
     - name: Release
