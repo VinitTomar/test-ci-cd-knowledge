@@ -1,5 +1,7 @@
 name: For main branch
 
+# Adding some comments for testing proper release body generation
+
 on: 
   push:
     branches:
@@ -23,6 +25,5 @@ jobs:
         with:
           tag_name: ${{ steps.tag_version.outputs.new_tag }}
           name: Release ${{ steps.tag_version.outputs.new_tag }}
-          # body: ${{ steps.tag_version.outputs.changelog }}
           prerelease: true
           generate_release_notes: true
