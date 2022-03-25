@@ -1,4 +1,4 @@
-name: Other branches
+name: For branches other than main
 
 on: 
   push:
