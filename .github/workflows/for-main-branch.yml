@@ -1,7 +1,5 @@
 name: For main branch
 
-# Adding some comments for testing proper release body generation
-
 on: 
   push:
     branches:
