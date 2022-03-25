@@ -15,8 +15,10 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return "Hello Vinit!"', () => {
-      expect(appController.getHello()).toBe('Hello Vinit!');
+    it('should return "Hello Vinit. This is version 0.0.14!"', () => {
+      expect(appController.getHello()).toBe(
+        'Hello Vinit. This is version 0.0.14!',
+      );
     });
   });
 });
