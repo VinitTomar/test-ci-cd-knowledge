@@ -1,3 +1,12 @@
+## [0.2.1](https://github.com/VinitTomar/test-ci-cd-knowledge/compare/v0.2.0...v0.2.1) (2022-03-28)
+
+
+### Bug Fixes
+
+* main branch worklow code refactored ([c3641db](https://github.com/VinitTomar/test-ci-cd-knowledge/commit/c3641db1b639332447afe5dae554099039c4d4e3))
+
+
+
 # [0.2.0](https://github.com/VinitTomar/test-ci-cd-knowledge/compare/v0.0.19...v0.2.0) (2022-03-28)
 
 
@@ -18,10 +27,6 @@
 
 
 ## [0.0.17](https://github.com/VinitTomar/test-ci-cd-knowledge/compare/v0.0.16...v0.0.17) (2022-03-25)
-
-
-
-## [0.0.16](https://github.com/VinitTomar/test-ci-cd-knowledge/compare/v0.0.15...v0.0.16) (2022-03-25)
 
 
 
