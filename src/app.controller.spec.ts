@@ -15,9 +15,9 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return "Hello Vinit. This is latest version!"', () => {
+    it('should return "Hello World. Happy codding :-)"', () => {
       expect(appController.getHello()).toBe(
-        'Hello Vinit. This is latest version!',
+        'Hello World. Happy codding :-)',
       );
     });
   });
