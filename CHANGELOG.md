@@ -1,3 +1,17 @@
+# [1.0.0](https://github.com/VinitTomar/test-ci-cd-knowledge/compare/v0.2.1...v1.0.0) (2022-03-28)
+
+
+### Feat
+
+* add new welcome msg ([#10](https://github.com/VinitTomar/test-ci-cd-knowledge/issues/10)) ([bfbfca1](https://github.com/VinitTomar/test-ci-cd-knowledge/commit/bfbfca13f7662d96186752e316f8929a5f08617a))
+
+
+### BREAKING CHANGES
+
+* A fresh new welcome message added.
+
+
+
 ## [0.2.1](https://github.com/VinitTomar/test-ci-cd-knowledge/compare/v0.2.0...v0.2.1) (2022-03-28)
 
 
@@ -23,10 +37,6 @@
 
 
 ## [0.0.18](https://github.com/VinitTomar/test-ci-cd-knowledge/compare/v0.0.17...v0.0.18) (2022-03-25)
-
-
-
-## [0.0.17](https://github.com/VinitTomar/test-ci-cd-knowledge/compare/v0.0.16...v0.0.17) (2022-03-25)
 
 
 
