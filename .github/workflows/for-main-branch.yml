@@ -12,8 +12,10 @@ jobs:
       needs: Validate
       runs-on: ubuntu-latest
       environment: prod
+
       steps:
         - uses: actions/checkout@v2
+
         - uses: akhileshns/heroku-deploy@v3.12.12
           with:
             heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
@@ -22,14 +24,15 @@ jobs:
   Release:
     needs: Deploy
     runs-on: ubuntu-latest
+    
     steps:
       - uses: actions/checkout@v2
+
       - name: Conventional Changelog Action
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
         with:
           github-token: ${{ secrets.github_token }}
-          # output-file: "false"
 
       - name: Create Release
         uses: actions/create-release@v1
