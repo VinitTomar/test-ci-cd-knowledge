@@ -1,18 +1,27 @@
-# Changelog
-
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
-
-## [0.1.0](https://github.com/mokkapps/changelog-generator-demo/compare/v0.0.19...v0.1.0) (2022-03-26)
+# [0.2.0](https://github.com/VinitTomar/test-ci-cd-knowledge/compare/v0.0.19...v0.2.0) (2022-03-28)
 
 
 ### Features
 
-* changelog release scripts added ([86f9dec](https://github.com/mokkapps/changelog-generator-demo/commits/86f9deca39b32b4490a072261869cd585fbec918))
-* initial feature commit ([f0b08ba](https://github.com/mokkapps/changelog-generator-demo/commits/f0b08ba9e62c7cbef89348b2135a20dab41ae2db))
+* changelog release scripts added ([86f9dec](https://github.com/VinitTomar/test-ci-cd-knowledge/commit/86f9deca39b32b4490a072261869cd585fbec918))
+* initial feature commit ([f0b08ba](https://github.com/VinitTomar/test-ci-cd-knowledge/commit/f0b08ba9e62c7cbef89348b2135a20dab41ae2db))
+* new changlog generator added ([c3061da](https://github.com/VinitTomar/test-ci-cd-knowledge/commit/c3061da8b55a1de1424bf35877e223f49f626782))
 
-### [0.0.1](https://github.com/mokkapps/changelog-generator-demo/compare/v0.0.19...v0.0.1) (2022-03-26)
 
 
-### Features
+## [0.0.19](https://github.com/VinitTomar/test-ci-cd-knowledge/compare/v0.0.18...v0.0.19) (2022-03-25)
 
-* initial feature commit ([f0b08ba](https://github.com/mokkapps/changelog-generator-demo/commits/f0b08ba9e62c7cbef89348b2135a20dab41ae2db))
+
+
+## [0.0.18](https://github.com/VinitTomar/test-ci-cd-knowledge/compare/v0.0.17...v0.0.18) (2022-03-25)
+
+
+
+## [0.0.17](https://github.com/VinitTomar/test-ci-cd-knowledge/compare/v0.0.16...v0.0.17) (2022-03-25)
+
+
+
+## [0.0.16](https://github.com/VinitTomar/test-ci-cd-knowledge/compare/v0.0.15...v0.0.16) (2022-03-25)
+
+
+
